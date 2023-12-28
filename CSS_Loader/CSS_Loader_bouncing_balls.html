@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid blue;
+            width: 400px;
+            height: 30px;
+            border-radius:40px;
+            box-shadow:5px 5px 10px blue;
+            background-image: linear-gradient(blue,black 20%);
+            position: relative;
+            top: 500px;
+            left: 150px;
+        }
+        .c{
+            width: 50px;
+            height: 50px;
+            border-radius: 0%;
+            animation-name: load;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        @keyframes load 
+        {
+            0%{
+            }  
+            50%{
+            width: 40px;
+            height: 40px;
+            border-radius: 0%;
+            position: relative;
+            z-index: 1;
+            bottom: 350px;
+            } 
+        }
+
+        #a{
+            border: 2px solid red;
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            box-shadow: 3px 3px 10px red;
+            background-image: radial-gradient(red,red,black 80%,red,red);
+            position: relative;
+            animation-delay: 0s;
+            bottom: 50px;
+        }
+        #b{
+            border: 2px solid blue;
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            box-shadow: 3px 3px 10px blue;
+            background-image: radial-gradient(blue,blue,black 80%,blue,blue);
+            position: relative;
+            left: 110px;
+            bottom: 100px;
+            animation-delay: 0.5s;
+        }
+        #c{
+            border: 2px solid green;
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            box-shadow: 3px 3px 10px green;
+            background-image: radial-gradient(green,green,black 80%,green,green);
+            position: relative;
+            left: 220px;
+            bottom: 150px;
+            animation-delay: 0s;
+        }
+        #d{
+            border: 2px solid yellow;
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            box-shadow: 3px 3px 10px yellow;
+            background-image: radial-gradient(yellow,yellow,black 80%,yellow,yellow);
+            position: relative;
+            left: 340px;
+            bottom: 200px;
+            animation-delay: 0.5s;
+        }
+
+        /* top: -50px;
+        top: -96px;
+            left: 110px;
+            top: -140px;
+            left: 220px;
+            top: -190px;
+            left: 340px;
+         */
+    </style>
+</head>
+<body style="background-color: black;">
+    <div class="container">
+        <div id="a" class="c"></div>
+        <div id="b" class="c"></div>
+        <div id="c" class="c"></div>
+        <div id="d" class="c"></div>
+    </div>
+</body>
+</html>
